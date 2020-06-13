@@ -1,23 +1,13 @@
-const express = require("express");
-require("express-async-errors");
-
+const express = require('express');
 const app = express();
 
-app.use(
-  express.urlencoded({
-    extended: true,
-  })
-);
 
-app.use(function (req, res) {
-  res.render("404", { layout: false });
-});
-
-app.use(function (err, req, res, next) {
-  console.error(err.stack);
-  res.status(500).render("500", { layout: false });
-});
-
+app.use(express.urlencoded({
+    extended: true
+  }));
+app.use(express.static('public'));
+require('./middlewares/view.mdw')(app);
+app.use('/News',require('./routers/news.route'));
 const PORT = 3000;
 app.listen(PORT, function () {
   console.log(`Server is running at http://localhost:${PORT}`);

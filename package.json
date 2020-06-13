@@ -1,29 +1,16 @@
 {
-  "name": "baodientu_ltweb2",
+  "name": "doan",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chiminhtathoj/BaoDienTu_LTWEB2.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chiminhtathoj/BaoDienTu_LTWEB2/issues"
-  },
-  "homepage": "https://github.com/chiminhtathoj/BaoDienTu_LTWEB2#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
-    "express-async-errors": "^3.1.1",
     "express-handlebars": "^4.0.4",
-    "express-handlebars-sections": "^1.0.1",
-    "express-session": "^1.17.1",
-    "mysql": "^2.18.1"
+    "express-handlebars-sections": "^1.0.1"
   }
 }
