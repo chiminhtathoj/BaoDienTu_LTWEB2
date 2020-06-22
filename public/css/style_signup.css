@@ -9,7 +9,7 @@ body {
 }
 
 /* Typography */
-h1#title {
+h1 #title {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     font-size: 3.2em;
@@ -75,7 +75,7 @@ p.small {
     max-width: 340px;
     margin: 0 auto;
     position: relative;
-    top: 80px;
+    top: 10px;
     padding-bottom: 30px;
     border-radius: 5px;
     box-shadow: 0 5px 50px rgba(0, 0, 0, 0.4);
