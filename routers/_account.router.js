@@ -8,8 +8,8 @@ router.get("/login", async function (req, res) {
     style: "main.css",
   });
 });
-router.get("/register", function (req, res) {
-  res.render("vwAccount/SignUp");
-});
+// router.get("/register", function (req, res) {
+//   res.render("vwAccount/SignUp");
+// });
 
 module.exports = router;
